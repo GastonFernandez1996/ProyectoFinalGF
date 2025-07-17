@@ -1,0 +1,5 @@
+Este proyecto es una página web desarrollada como parte de un curso de Front-End. La estructura está basada en HTML semántico, utilizando etiquetas como <header>, <main> y <footer> para organizar de forma clara y accesible el contenido.
+
+Para el diseño visual y la adaptabilidad, se aplicaron técnicas de CSS Flexbox, CSS Grid y media queries, logrando así una interfaz responsiva que se adapta a distintos dispositivos. Además, se integró Formspree para gestionar el envío del formulario de contacto de manera sencilla y eficaz.
+
+Recientemente, se incorporó JavaScript para consumir una API externa, lo que permite mostrar dinámicamente productos y reseñas en la página. También se implementó la funcionalidad de un carrito de compras, donde los productos seleccionados por el usuario se suman y se almacenan de forma interactiva.

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+               <li><a href="#productos">Productos</a></li>
+               <li><a href="#reseñas">Reseñas</a></li>
+               <li><a href="#contacto">Contacto</a></li>
+               <li><a href="assets/pages/carrito.html"><img src="assets/icon/shopping-cart.png" width="20px" alt="">
+                    <span id="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        
+        <section id="productos" >
+                <h2 class="titulo">PRODUCTOS DESTACADOS</h2>
+                <div class="productos" id="contenedor-productos">              
+                    
+            </div>
+        </section> 
+            <section id="reseñas">
+
+                <h2 class="titulo">R E S E Ñ A S</h2>
+                <div class="grid-reseñas" id="contenedor-reseñas">           
+
+
+                </div> 
+            </section>
+            <section id="contacto">
+                <h2 class="titulo">Contacto</h2>
+                <div class="contacto">
+                    <form class="formulario" action="https://formspree.io/f/xkgrdggk" method="post">
+                        <fieldset>
+                            <legend>Informacion Personal</legend>
+                            <div class="campo">
+                                <label for="nombre">Nombre: </label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                           </div>
+                           <div class="campo">
+                                <label for="apellido">Apellido: </label>
+                                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
+                           </div>
+                           <div class="campo">
+                                <label for="mail">Correo electronico: </label>
+                                <input type="email" name="mail" id="mail" placeholder="Ingrese su correo electronico" required>
+                           </div>
+                           <div class="campo">
+                               <label for="mensaje">Mensaje:  </label>
+                                <textarea name="mensaje" id="mensaje" rows="4" cols="40" placeholder="Mensaje" required></textarea>
+                        </div>
+                            <button type="submit" class="boton">Enviar</button>
+                        </fieldset>
+                       
+                    
+                    </form>
+                </div>
+            </section>
+            </main>
+    <footer>
+       <small>&copy; Copyright  2025 - Todos los derechos reservados</small>
+
+    </footer>
+    <script src="assets/js/productos.js"></script>
+    <script src="assets/js/reseñas.js"></script>
+</body>
+</html>

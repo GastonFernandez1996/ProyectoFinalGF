@@ -1,0 +1,209 @@
+:root{
+    --color-principal:#2e86c1;
+    --color-secundario:#d2691e;
+    --color-btn-hover:#e07b33;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+header{
+    position:sticky;
+    top: 0;
+    background-color: var(--color-principal);
+    text-align: center;
+    padding: 40px;
+    height: 80px;
+    
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;    
+    gap: 20px;
+    
+  
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: var(--color-secundario);
+}
+
+
+
+
+.productos{
+    display: flex;    
+    flex-wrap: wrap;    
+    justify-content: center;  
+    gap: 15px;
+    padding: 20px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 220px;
+  height: 370px;   
+  padding: 20px;
+  min-width: 220px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.producto:hover {
+  transform: scale(1.03); /* agranda un poco la card */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.producto h2 {
+  min-height: 3em; 
+  margin: 0.5em 0;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+}
+
+
+.producto img{
+    width: 150px;
+    transition: transform 0.3s ease;
+
+}
+
+.producto:hover img {
+  transform: scale(1.1); /* agranda la imagen dentro de la card */
+}
+
+
+.boton{
+
+    
+    padding: 8px;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.4s ease;
+
+}
+
+.boton:hover{
+   background-color: var(--color-btn-hover) ;
+   transform: scale(1.1);
+   transition: background-color 0.3s, color 0.3s;
+
+}
+
+.botonCarrito{
+ 
+    margin: 10px;
+    padding: 8px;
+    background-color: var(--color-principal);
+    border-radius: 10px;
+    cursor: pointer;    
+    font-weight: bold;
+    transition: transform 0.4s ease;
+}
+
+.botonCarrito:hover{
+    background-color: var(--color-btn-hover) ;
+   transform: scale(1.1);
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.grid-reseñas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 1px solid black;
+    margin: 5px 5px 30px 5px;
+   
+    }
+.reseña{
+    border: 1px solid black;
+    padding: 5px ;  
+}
+.titulo{
+    text-align: center;
+    color:var(--color-secundario);
+    margin:30px 0 10px 0;
+}
+
+.formulario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 5px 30px 5px;  
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+ 
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+  padding: 8px;
+  font-size: 1rem;
+  width: 100%;
+
+}
+
+
+footer{
+    background-color:var(--color-principal);
+    padding: 40px;
+    height: 80px;
+
+}
+
+@media (max-width:520px){
+
+   fieldset {
+    
+    max-width: 450px;
+    
+    }
+    .formulario{
+        background-color: var(--color-principal);
+    }
+.grid-reseñas{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-content: center;
+    max-width: 450px;
+}
+
+header{
+height: 100%;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    
+}
+}
