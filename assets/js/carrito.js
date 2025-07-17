@@ -76,7 +76,7 @@ const renderizarBotones=()=>{
             if(confirmado){
                 alert("Gracias por su compra");
                 localStorage.removeItem("carrito");
-                window.location.href="/ProyectoFinalGF/index.html"
+                window.location.href="/ProyectoFinalGF/"
             }
          
         });
